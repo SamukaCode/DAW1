@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário </title>
+</head>
+<body>
+
+    <h1>Formulário - Cadastro de Funcionário</h1>
+
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome" size="50" 
+        maxlength="50" minlength="3" required placeholder="Ex: Roberto Silveira"
+        spellcheck>
+            <br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" name="idade" id="idade" required size="3" min="18" max="50" step="2" value="18" placeholder="Ex: 32">
+            <br><br>
+        
+        <label for="cargo">Cargo:</label><br>
+        <input type="text" name cargo" id="cargo" value="Professor" readonly>
+            <br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" placeholder="Digite uma senha" name="senha" id="senha" minlength="8" maxlength="16" required>
+            <br><br>
+
+        <label for="sexo">Sexo</label><br>
+        M <input type="radio" name="sexo" value="Masc">
+        F <input type="radio" name="sexo" value="Femi" checked>
+            <br><br>
+
+        <label>Períodos de Aula:</label><br>
+        <input type="checkbox" name="manhã" value="M" checked> Manhã 
+        <input type="checkbox" name="tarde" value="T"> Tarde 
+        <input type="checkbox" name="noite" value="N"> Noite
+            <br><br>
+
+        Curso:<br>
+        <select name="curso" id="curso">
+            <option value="Informática">Informática</option>
+            <option value="Edificações">Edificações</option>
+            <option value="Enfermagem" selected>Enfermagem</option>
+            <option value="Geodésia e Cartografia">Geodésia e Cartografia</option>
+            <option value="Mecânica">Mecânica</option>
+        </select>
+            <br><br>
+     
+            <input type="submit" name="btnEnviar" value="Enviar">
+    </form>
+</body>
+</html>
