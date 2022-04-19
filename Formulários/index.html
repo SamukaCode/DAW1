@@ -11,52 +11,95 @@
     <h1>Formulário - Cadastro de Funcionário</h1>
 
     <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" name="nome" id="nome" size="50" 
-        maxlength="50" minlength="3" required placeholder="Ex: Roberto Silveira"
-        spellcheck>
-            <br><br>
-
-        <label for="idade">Idade:</label><br>
-        <input type="number" name="idade" id="idade" required size="3" min="18" max="50" step="2" value="18" placeholder="Ex: 32">
-            <br><br>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
         
-        <label for="cargo">Cargo:</label><br>
-        <input type="text" name cargo" id="cargo" value="Professor" readonly>
-            <br><br>
+            <label for="nome">Nome:</label>
+                <br>
+            <input type="text" name="nome" id="nome" size="50" maxlength="50" minlength="3" required placeholder="Ex: Roberto Silveira" spellcheck>
+                <br><br>
 
-        <label for="senha">Senha:</label><br>
-        <input type="password" placeholder="Digite uma senha" name="senha" id="senha" minlength="8" maxlength="16" required>
-            <br><br>
+            <label for="foto">Foto 3x4:</label><br>
+            <input type="file" name="foto" id="foto" accept="image/*">
+                <br><br>
 
-        <label for="sexo">Sexo</label><br>
-        M <input type="radio" name="sexo" value="Masc">
-        F <input type="radio" name="sexo" value="Femi" checked>
-            <br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+                <br><br>
 
-        <label>Períodos de Aula:</label><br>
-        <input type="checkbox" name="manhã" value="M" checked> Manhã 
-        <input type="checkbox" name="tarde" value="T"> Tarde 
-        <input type="checkbox" name="noite" value="N"> Noite
-            <br><br>
+            <label for="dataNasc">Data de Nascimento:<br></label>
+            <input type="date" id="dataNasc" name="dataNasc" required>
+                <br><br>
 
-        Curso:<br>
-        <select name="curso" id="curso">
-            <option value="Informática">Informática</option>
-            <option value="Edificações">Edificações</option>
-            <option value="Enfermagem" selected>Enfermagem</option>
-            <option value="Geodésia e Cartografia">Geodésia e Cartografia</option>
-            <option value="Mecânica">Mecânica</option>
-        </select>
-            <br><br>
+            <label for="dataNasc">Data e Hora de Cadastro:<br></label>
+            <input type="datetime-local" id="dataCad" name="dataCad">
+                <br><br>
 
-        <label>Disciplinas (várias)</label>
-        <select multiple>
-            <option value="BD">Banco de Dados</option>
-            <option value="LP" selected>Linguagem de Programação</option>   
-            <option value="DAW"> Des. Ap. Web</option>
-        </select>
-     
+            <label for="idade">Idade:</label><br>
+            <input type="number" name="idade" id="idade" required size="3" min="18" max="50" step="2" value="18" placeholder="Ex: 32">
+                <br><br>
+        
+            <label for="cargo">Cargo:</label><br>
+            <input type="text" name cargo" id="cargo" value="Professor" readonly>
+                <br><br>
+
+            <label for="senha">Senha:</label><br>
+            <input type="password" placeholder="Digite uma senha" name="senha" id="senha" minlength="8" maxlength="16" required>
+                <br><br>
+        
+            <label for="sexo">Sexo</label><br>
+            M <input type="radio" name="sexo" value="Masc">
+            F <input type="radio" name="sexo" value="Femi" checked> 
+                <br><br>
+
+            <label for="CorPref">Cor preferida:</label>
+            <input type="color" id="corPref" name="corPref" value="#FF0000">
+        </fieldset>
+            <br>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+
+            <label>Períodos de Aula:</label><br>
+            <input type="checkbox" name="manhã" value="M" checked> Manhã 
+            <input type="checkbox" name="tarde" value="T"> Tarde 
+            <input type="checkbox" name="noite" value="N"> Noite
+                <br><br>
+
+            <label>Horário de trabalho:</label><br>
+            De: <input type="time" id="inicioTrab" name="inicioTrab">
+            a: <input type="time" id="fimTrab" name="fimTrab">
+                <br><br>
+
+            <label for="mesIni">Mês de início:</label>
+            <input type="month" id="mesIni" name="mesIni">
+                <br><br>
+    
+            <label for="semIni">Mês de início:</label>
+            <input type="week" id="semIni" name="semIni">
+                <br><br>
+
+            Curso:<br>
+            <select name="curso" id="curso">
+                <option value="Informática">Informática</option>
+                <option value="Edificações">Edificações</option>
+                <option value="Enfermagem" selected>Enfermagem</option>
+                <option value="Geodésia e Cartografia">Geodésia e Cartografia</option>
+                <option value="Mecânica">Mecânica</option>
+            </select>
+                <br><br>
+
+            <label>Disciplinas (várias)</label><br>
+            <select size="3" multiple>
+                <option value="BD">Banco de Dados</option>
+                <option value="LP" selected>Linguagem de Programação</option>   
+                <option value="DAW"> Des. Ap. Web</option>
+            </select>
+                <br><br>
+
+            <label for="exp">Experiência <small>(de 0 a 10)</small></label><br>
+            <input type="range" id="exp" name="exp" min="0" max="10" value="0">
+        </fieldset>
+                <br>
             <input type="submit" name="btnEnviar" value="Enviar">
     </form>
 </body>
