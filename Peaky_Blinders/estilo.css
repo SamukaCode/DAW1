@@ -1,0 +1,25 @@
+/* ! Aqui jaz toda a linha de código destinada ao CSS do estilo geral */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=My+Soul&family=Oswald&display=swap');
+
+        h1 {
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            color:  #FFFFFF;
+            font-size: 18px;
+            background: linear-gradient(0deg, #1B2C34 0%, #354344 50%, #4a4a4a 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        .texto {
+            padding: 5px 10px;
+        }
+
+        .justalign {
+            text-align: center;
+        }
