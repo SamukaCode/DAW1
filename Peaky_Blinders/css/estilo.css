@@ -10,7 +10,7 @@
         body {
             font-family: 'Oswald', sans-serif;
             color:  #FFFFFF;
-            font-size: 22px;
+            font-size: 20px;
             background: linear-gradient(0deg, #1B2C34 0%, #354344 50%, #4a4a4a 100%);
             margin: 0;
             padding: 0;
@@ -24,3 +24,28 @@
         .justalign {
             text-align: center;
         }
+
+        /* ! Flex Box - ROW! */
+
+        .container { /* * Flex Box */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: no-wrap;
+            justify-content: space-around;
+        }
+
+        .item { /* * Flex Box */
+            padding: 10px;
+            margin: 5px;
+          } 
+         
+         .index1 { /* * Flex Box */
+            width: 70%;
+         }
+         
+         .index2 { /* * Flex Box */
+            width: 30%;
+         }
+
+
+         
