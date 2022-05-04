@@ -22,7 +22,7 @@ input, select {
   }
 
   .fitem { /* * Flex Box */
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
   }
 
@@ -34,12 +34,10 @@ input, select {
       width: 35%;
   }
 
-  .fitem { /* * Flex Box */
-    padding: 10px;
-    margin: 5px;
-    box-align: center;
-  } 
- 
- .findex1 { /* * Flex Box */
-    box-align: center;
- }
+  .form3 { /* * Flex Box */
+    width: 50%;
+  }
+
+  .form4 { /* * Flex Box */
+    width: 50%;
+  }
