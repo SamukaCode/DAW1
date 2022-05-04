@@ -1,0 +1,45 @@
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #625555;
+    -webkit-transition: 0,7s;
+    transition: 1s;
+    outline: none;
+    border-radius: 6px;
+  }
+  
+  input:focus,select:focus {
+    border: 3px solid #44679e;
+  }
+
+  .fcontainer { /* * Flex Box */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .fitem { /* * Flex Box */
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .form1 { /* * Flex Box */
+      width: 65%;
+  }
+
+  .form2 { /* * Flex Box */
+      width: 35%;
+  }
+
+  .fitem { /* * Flex Box */
+    padding: 10px;
+    margin: 5px;
+    box-align: center;
+  } 
+ 
+ .findex1 { /* * Flex Box */
+    box-align: center;
+ }

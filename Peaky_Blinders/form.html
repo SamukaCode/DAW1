@@ -8,6 +8,10 @@
     <link rel="icon" href="images/fav.png">
     <link rel="stylesheet" type="text/css"  href="CSS/estilo.css" />
     <link rel="stylesheet" type="text/css" href="CSS/dropdownbar.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/form.css" />
+    <script src="js/form.js"></script>
+
+
 </head>
 <body>
     <nav>
@@ -34,18 +38,78 @@
         <div class="fitem findex1">
             <p> Sinta-se a vontade para preencher o formulário e receber todas as notícias diárias sobre Birmingham e o mundo de Peaky Blinders!</p>
 
-            <fieldset><h1 align="center">Formulário de Recebimento de Notícias</h1>
+            <!-- Composto por forms de tipo TEXT, NUMBER, EMAIL, SELECT (OPTGROUP) E DATE -->
+
+            <fieldset><h1 align="center">Formulário de Inscrição: Pacote Blinder</h1>
             <form>
                 <fieldset>
                     <legend>
                         Dados Pessoais
                     </legend>
-                    <label for="name">Nome Completo:</label><br>
-                    <input type="text" name="name" id="name" size="80" maxlength="80" minlength="5" placeholder="Ex: Roberto Carlos Braga" spellcheck required>
-                    <br>
+                    <div class="fcontainer">
+                        <div class="fitem form1">
+                            <label for="name">Nome Completo:</label><br>
+                            <input type="text" name="name" id="name" maxlength="80" minlength="5" placeholder="Ex: Roberto Carlos Braga" spellcheck required>
+                                <br>
 
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" name="email" id="email" size="100" maxlength="100" minlength="2" placeholder="Ex: roberto@email.com"
+                            <label for="email">E-mail:</label><br>
+                            <input type="email" name="email" id="email" maxlength="100" minlength="2" placeholder="Ex: roberto@email.com" required>
+                                <br>
+                        </div>
+                        <div class="fitem form2">
+                            <label for="nascimento">Data de nascimento</label><br>
+                            <input type="date" name="nascimento" id="nascimento" required>
+                                <br>
+
+                            <label for="cpf">CPF:</label><br>
+                            <input oninput="mascara(this)" type="text" name="cpf" id="cpf" minlength="14" placeholder="Ex: 123.456.789-00" required>
+                                <br>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Dados de Entrega
+                    </legend>
+                    <div class="container">
+                        <div class="fitem form1">
+                            <label for="end">Endereço:</label><br>
+                            <input type="text" name="end" id="end" maxlength="150" placeholder="Ex: Rua das Macaxeiras" required>
+                            <br>
+
+                            <label for="baba">Bairro:</label><br>
+                            <input type="text" name="baba" id="baba" maxlength="50" placeholder="Ex: Jardim Roseiras" required>
+                            <br>
+
+                            <label for="comp">Complemento:</label><br>
+                            <input type="text" name="comp" id="comp" maxlength="100" placeholder="Ex: Condomínio Alvorada ou Perto do Parque">
+
+                        </div>
+                        <div class="fitem form2">
+
+                            <label for="cep">CEP:</label><br>
+                            <input oninput="mascaracep(this)" type="text" name="cep" id="cep" minlength="10" placeholder="Ex: 12.345-600" required>
+                            <br>
+
+                            <label for="num">Número:</label><br>
+                            <input type="number" name="num" id="num" min="1" required placeholder="Ex: 123">
+                            <br>
+
+                            <label for="opEnt">Opção de Entrega</label><br>
+                            <select name="opEnt" id="opEnt" required>
+                                <optgroup label="Entrega Normal">
+                                    <option value="Jadlog">Jadlog (10 dias úteis)</option>
+                                    <option value="Sedex">Sedex (7 dias úteis)</option>
+                                    <option value="Sedex 10">Sedex (chega amanhã)</option>
+                                </optgroup>
+                                <optgroup label="Entrega Agendada">
+                                    <option value="SedexAg">Sedex (a partir de 3 dias úteis)</option>
+                                    <option value="JetsAg">JetsLog (a partir de 10 dias úteis)</option>
+                                </optgroup>
+                            </select>
+
+                        </div>
+                    </div>
                 </fieldset>
             </form>
             </fieldset>
