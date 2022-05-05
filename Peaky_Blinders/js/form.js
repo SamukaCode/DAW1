@@ -29,3 +29,14 @@
    if (v.length == 6) k.value += "-";
 
 }
+
+function total(){
+   var j = document.getElementById(produto);
+   if (j="premium") {
+      totall.textContent = "R$199,90";
+   } else if (j="deluxe") {
+      totall.textContent = "R$149,90";
+   } else if (j="standard") {
+      totall.textContent = "R$99,90";
+   }
+}
