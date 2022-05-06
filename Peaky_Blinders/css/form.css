@@ -41,3 +41,7 @@ input, select {
   .form4 { /* * Flex Box */
     width: 50%;
   }
+
+  input .gh {
+    width: 50%;
+  }

@@ -123,7 +123,7 @@
                     <div class="fcontainer">
                         <div class="fitem form1">
                             <label for="produto">Produto Escolhido:</label><br>
-                            <select name="produto" id="produto" required>
+                            <select onselect="tt()" name="produto" id="produto" required>
                                 <option value="premium">Pacote Blinder Premium Deluxe: R$ 199,90</option>
                                 <option value="deluxe">Pacote Blinder Deluxe: R$ 149,90</option>
                                 <option value="standard">Pacote Blinder Standard: R$99,90</option>
@@ -131,6 +131,14 @@
                             <br>
                             <label for="credit">Número do Cartão de Crédito:</label><br>
                             <input oninput="mascarac(this)" type="text" name="credit" id="credit" minlength="16" required>
+                            <label for="parc">Parcelamento:</small></label><br>
+                                <select>
+                                    <option value="1">1x - sem juros.</option>
+                                    <option value="2" selected>2x - sem juros.</option>
+                                    <option value="3">3x - com juros.</option>
+                                </select>
+                           
+
                         </div>
                         <div class="fitem form2">
                             <label for="bdr">Bandeira do Cartão:</label>
@@ -140,6 +148,8 @@
                             </select>
                             <label for="cvv">Código de Segurança do Cartão:</label><br>
                             <input type="password" name="credit" id="credit" minlength="3" maxlength="3" required>
+                            <br><hr>
+                            Total:<input value="R$0,00" readonly type="text" name="total" id="total" style="font-size: 15px; font-weight: bold" />
                         </div>
                     </div>
                 </fieldset>
