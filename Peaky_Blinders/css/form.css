@@ -3,9 +3,9 @@ input, select {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 3px solid #625555;
+    border: 2px solid #625555;
     -webkit-transition: 0,7s;
-    transition: 1s;
+    transition: 0,5s;
     outline: none;
     border-radius: 6px;
   }
@@ -34,14 +34,14 @@ input, select {
       width: 35%;
   }
 
-  .form3 { /* * Flex Box */
-    width: 50%;
+  .button1 { /* * Flex Box */
+    width: 49%;
   }
 
-  .form4 { /* * Flex Box */
-    width: 50%;
+  .button2 { /* * Flex Box */
+    width: 49%;
   }
 
-  input .gh {
-    width: 50%;
+  .divbutton { /* * Flex Box */
+    width: 2%;
   }

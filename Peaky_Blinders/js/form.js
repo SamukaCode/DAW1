@@ -42,28 +42,3 @@ function mascarac(i){
    i.setAttribute("maxlength", "19");
    if (v.length == 4 || v.length == 9 || v.length == 14) i.value += " ";
 }
-
-function tt() {
-
-   String valor = document.getElementById("total");
-   String select = document.getElementById("produto");
-   
-   if (select.equals("premium"))
-   {
-      valor = "R$199,90";
-   } 
-   else if(select.equals("deluxe"))
-   {
-      valor ="R$149,90";
-   }
-   else if (select.equals("standard"))
-   {
-      valor = "R$99,00";
-   } 
-   else 
-   {
-      valor = "R$00,00";
-   }
-
-   document.getElementById("total").setAttribute("value","valor")
-}
