@@ -1,5 +1,5 @@
     // Créditos: https://bit.ly/3LGOV2E
-    
+
     function mascara(i){
    
     var v = i.value;
@@ -30,13 +30,15 @@
 
 }
 
-function total(){
-   var j = document.getElementById(produto);
-   if (j="premium") {
-      totall.textContent = "R$199,90";
-   } else if (j="deluxe") {
-      totall.textContent = "R$149,90";
-   } else if (j="standard") {
-      totall.textContent = "R$99,90";
+function mascarac(i){
+   
+   var v = i.value;
+   
+   if(isNaN(v[v.length-1])){
+      i.value = v.substring(0, i.length-1);
+      return;
    }
+   
+   i.setAttribute("maxlength", "19");
+   if (v.length == 4 || v.length == 9 || v.length == 14) i.value += " ";
 }

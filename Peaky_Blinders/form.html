@@ -38,7 +38,7 @@
         <div class="fitem findex1">
             <p> Sinta-se a vontade para preencher o formulário e receber todas as notícias diárias sobre Birmingham e o mundo de Peaky Blinders!</p>
 
-            <!-- Composto por forms de tipo TEXT, NUMBER, EMAIL, SELECT (OPTGROUP) E DATE -->
+            <!-- Composto por forms de tipo TEXT, NUMBER, EMAIL, SELECT (OPTGROUP), SELECT E DATE -->
 
             <fieldset><h1 align="center">Formulário de Inscrição: Pacote Blinder</h1>
             <form>
@@ -116,8 +116,8 @@
                         Dados de Compra
                     </legend>
                     <div style="font-size: 15px">
-                        Pacote Premium Deluxe: Contém erros de gravação e bastidores exclusivos, 3 canecas e 3 camisetas exclusivas e além disso, uma réplica da boina de Thomas Shelby.<br>
-                        Pacote Premium: Contém 2 canecas e 2 camisetas exclusivas e também os erros de gravação e bastidores.<br>
+                        Pacote Premium Deluxe: Contém erros de gravação e bastidores exclusivos, 3 canecas e 3 camisetas exclusivas, além de uma réplica da boina de Thomas Shelby (sem as lâminas..).<br>
+                        Pacote Premium: Contém 2 canecas e 2 camisetas exclusivas, além dos erros de gravação e bastidores exclusivos.<br>
                         Pacote Standard: Contém 1 caneca e 1 camiseta exclusiva, além dos bastidores das gravações.<br>
                     </div>
                     <div class="fcontainer">
@@ -128,9 +128,18 @@
                                 <option value="deluxe">Pacote Blinder Deluxe: R$ 149,90</option>
                                 <option value="standard">Pacote Blinder Standard: R$99,90</option>
                             </select>
+                            <br>
+                            <label for="credit">Número do Cartão de Crédito:</label><br>
+                            <input oninput="mascarac(this)" type="text" name="credit" id="credit" minlength="16" required>
                         </div>
                         <div class="fitem form2">
-                            <h1>Total:</h1> <span id="totall"></span>
+                            <label for="bdr">Bandeira do Cartão:</label>
+                            <select>
+                                <option value="master">MasterCard</option>
+                                <option value="visa">Visa</option>
+                            </select>
+                            <label for="cvv">Código de Segurança do Cartão:</label><br>
+                            <input type="password" name="credit" id="credit" minlength="3" maxlength="3" required>
                         </div>
                     </div>
                 </fieldset>
