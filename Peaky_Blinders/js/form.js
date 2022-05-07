@@ -30,15 +30,15 @@
 
 }
 
-function mascarac(i){
+function mascarac(p){
    
-   var v = i.value;
+   var v = p.value;
    
    if(isNaN(v[v.length-1])){
-      i.value = v.substring(0, i.length-1);
+      p.value = v.substring(0, v.length-1);
       return;
    }
    
-   i.setAttribute("maxlength", "19");
-   if (v.length == 4 || v.length == 9 || v.length == 14) i.value += " ";
+   p.setAttribute("maxlength", "19");
+   if (v.length == 4 || v.length == 9 || v.length == 14) p.value += "ㅤ";
 }
