@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Span e Div</title>
+
+    <style type="text/css">
+
+        nav {
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+
+        .conteudo {
+            color: red;
+            border: 1px red solid;
+            margin-top: 30px;
+            width: 50%
+        }
+
+        .texto {
+            color: green;
+            font-weight: bold;
+            text-decoration:underline;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="http://www.unicamp.br">Unicamp</a> | 
+    <a href="http://www.cotil.unicamp.br">Cotil</a>
+</nav>
+
+<div class="conteudo">
+    <p>Cursos do <span class="texto">Cotil</span> são:</p>
+    <ul>
+        <li>Desenvolvimento de Sistemas</li>
+        <li>Enfermagem</li>
+        <li>Subcursos:</li>
+        <ul>
+            <li>Qualidade</li>
+        </ul>
+    </ul>
+</div>
+<div class="conteudo">
+    <p>No curso de <span class="texto">Desenvolvimento de Sistemas</span> você aprenderá:</p>
+    <ul>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+    </ul>
+</div>
+</body>
+</html>
