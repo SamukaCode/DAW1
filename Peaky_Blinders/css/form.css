@@ -8,6 +8,17 @@ input, select {
     transition: 0,5s;
     outline: none;
     border-radius: 6px;
+    font-weight: bold;
+  }
+
+  #total {
+    background-color: rgba(0%, 0%, 0%, 0);
+     color: white;
+     font-weight: bold;
+     border-color: rgba(0%, 0%, 0%, 0);
+     font-size: 25px;
+     padding: 8px 0px;
+     margin: 0px;
   }
   
   input:focus,select:focus {

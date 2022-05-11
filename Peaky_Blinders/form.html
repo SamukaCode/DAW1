@@ -35,8 +35,8 @@
         Pela Ordem dos Peaky Blinders
     </div>
     <div class="container">
-        <div class="fitem findex1">
-            <p> Sinta-se a vontade para preencher o formulário e receber todas as notícias diárias sobre Birmingham e o mundo de Peaky Blinders!</p>
+        <div class="fitem findex1"><br>
+            <div align="center"> Sinta-se a vontade para preencher o formulário e receber todas as notícias diárias sobre Birmingham e o mundo de Peaky Blinders!</div>
 
             <!-- Composto por forms de tipo TEXT, NUMBER, EMAIL, SELECT (OPTGROUP), SELECT E DATE -->
 
@@ -123,11 +123,13 @@
                     <div class="fcontainer">
                         <div class="fitem form1">
                             <label for="produto">Produto Escolhido:</label><br>
-                            <select name="produto" id="produto" required>
-                                <option value="premium">Pacote Blinder Premium Deluxe: R$ 199,90</option>
-                                <option value="deluxe">Pacote Blinder Deluxe: R$ 149,90</option>
-                                <option value="standard" selected>Pacote Blinder Standard: R$99,90</option>
+                            <select onchange="muda()" name="produto" id="produto" required>
+                                <option value="R$ 0,00">Selecione uma opção.</option>
+                                <option value="R$ 199,90">Pacote Blinder Premium Deluxe: R$ 199,90</option>
+                                <option value="R$ 149,90">Pacote Blinder Deluxe: R$ 149,90</option>
+                                <option value="R$ 99,90" selected>Pacote Blinder Standard: R$99,90</option>
                             </select>
+
                             <br>
                             <label for="credit">Número do Cartão de Crédito:</label><br>
                             <input oninput="mascarac(this)" type="text" name="credit" id="credit" minlength="16" required>
@@ -137,8 +139,6 @@
                                     <option value="2">2x - sem juros.</option>
                                     <option value="3">3x - com juros.</option>
                                 </select>
-                           
-
                         </div>
                         <div class="fitem form2">
                             <label for="bdr">Bandeira do Cartão:</label>
@@ -148,17 +148,19 @@
                             </select>
                             <label for="cvv">Código de Segurança do Cartão:</label><br>
                             <input type="password" name="credit" id="credit" minlength="3" maxlength="3" required><br>
-                            Finalizar:<br>
-                            <div class="fcontainer">
-                                <div class="button1">
-                                    <input type="submit" name="btnEnviar" value="Efetuar Pagamento" style="background-color: rgb(172, 172, 172); font-weight: bold;">
-                                </div>
-                                <div class="divbutton"></div>
-                                <div class="button2">
-                                    <input type="reset" value="Limpar" style="background-color: rgb(172, 172, 172); font-weight: bold;">
-                                </div>
-                            </div>
-
+                            <span style="font-size: 25px">Total:</span>
+                            <input type="text" name="total" id="total" value="R$ 0,00" readonly>
+                        </div>
+                    </div>
+                    <hr>
+                    Finalizar:
+                    <div class="fcontainer">
+                        <div class="button1">
+                            <input type="submit" name="btnEnviar" value="Efetuar Pagamento" style="background-color: rgb(172, 172, 172); font-weight: bold;">
+                        </div>
+                        <div class="divbutton"></div>
+                        <div class="button2">
+                            <input type="reset" value="Limpar" style="background-color: rgb(172, 172, 172); font-weight: bold;">
                         </div>
                     </div>
                 </fieldset>

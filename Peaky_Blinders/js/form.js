@@ -42,3 +42,9 @@ function mascarac(p){
    p.setAttribute("maxlength", "19");
    if (v.length == 4 || v.length == 9 || v.length == 14) p.value += "ㅤ";
 }
+
+function muda() {
+   var x = document.getElementById('produto').value;
+
+   document.getElementById('total').value = x;
+}
