@@ -1,5 +1,0 @@
-Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags <style>. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.
-
-Aprenda mais no nosso curso, arrasta pra cima!
-
-/\
