@@ -47,6 +47,11 @@
             width: 30%;
          }
 
+         .fotoThommy{
+             display: flex;
+             align-items: center;
+         }
+
          a {
              color: bisque;
          }
