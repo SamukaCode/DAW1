@@ -30,7 +30,7 @@
         .container { /* * Flex Box */
             display: flex;
             flex-direction: row;
-            flex-wrap:nowrap;
+            flex-wrap: nowrap;
             justify-content: space-around;
         }
 
@@ -54,5 +54,9 @@
 
          a {
              color: bisque;
+         }
+
+         .li {
+             color: #bbbbbb;
          }
          

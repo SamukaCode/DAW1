@@ -1,4 +1,4 @@
-    // Créditos: https://bit.ly/3LGOV2E
+    // Créditos às functions de máscaras: https://bit.ly/3LGOV2E
 
     function mascara(i){
    
@@ -42,6 +42,8 @@ function mascarac(p){
    p.setAttribute("maxlength", "19");
    if (v.length == 4 || v.length == 9 || v.length == 14) p.value += "ㅤ";
 }
+
+   // Créditos à function muda: Davi Macedo <3
 
 function muda() {
    var x = document.getElementById('produto').value;
