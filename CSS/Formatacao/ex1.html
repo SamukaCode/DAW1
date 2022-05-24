@@ -14,25 +14,34 @@
             text-decoration: underline;
             text-decoration-color: red;
             text-transform: uppercase; /* lowercase, capitalize */
+            
         }
 
         .titulo {
             font-weight: bold;
-            font-size: 25px;
+            font-size: 50px;
             font-variant: small-caps;
             font-family: 'Times', serif;
-            text-shadow: 2px 3px 1px lightcoral, -3px -3px 1px gray;
+            text-shadow: 2px 2px 0px blue, 4px 4px 0px yellow, 6px 6px 0px red;
             
         }
         
         #rodape{
             font-size: 10px;
-            text-align: center;
+            direction: ltr; /* rtl */
         }
 
         #textoPrincipal{
-            font-family: 'Dancing Script', cursive;
-            font-size: 20px
+            font-family: 'Times', sans-serif;
+            font-size: 20px;
+            text-indent: 30px;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            line-height: 30px;
+        }
+
+        #pot {
+            vertical-align: super; /* sub */
         }
 
 </style>
@@ -42,9 +51,11 @@
     <p class="titulo">História do Cotil</p>
 
     <p id="textoPrincipal">
-        O <span id="textoDestacado">Colégio Técnico de Limeira – Cotil</span>, <a href="www.unicamp.br">da Universidade Estadual de Campinas</a>, foi criado pela Lei Estadual nº 7.655, de 28 de dezembro de 1962, e autorizado a ser instalado e a entrar em funcionamento pela Resolução C.E.E. nº 46/1966 e Deliberação C.E.E. nº 12/1970, Diário Oficial de 29/01/72. Sua instalação se deu em 24 de abril de 1967, dia em que se comemora seu aniversário. Inicialmente recebeu o nome de Colégio Técnico e Industrial de Limeira, tendo como sua mantenedora a Universidade Estadual de Campinas. Iniciou seu funcionamento nas instalações provisórias do Ginásio Estadual Industrial Trajano Camargo de Limeira e, em 09 de setembro de 1973, passou para as novas instalações no atual campus I da UNICAMP em Limeira. 
+        O <span id="textoDestacado">Colégio Técnico de Limeira – Cotil</span>, <a href="https://www.unicamp.br">da Universidade Estadual de Campinas</a>, foi criado pela Lei Estadual nº 7.655, de 28 de dezembro de 1962, e autorizado a ser instalado e a entrar em funcionamento pela Resolução C.E.E. nº 46/1966 e Deliberação C.E.E. nº 12/1970, Diário Oficial de 29/01/72. Sua instalação se deu em 24 de abril de 1967, dia em que se comemora seu aniversário. Inicialmente recebeu o nome de Colégio Técnico e Industrial de Limeira, tendo como sua mantenedora a Universidade Estadual de Campinas. Iniciou seu funcionamento nas instalações provisórias do Ginásio Estadual Industrial Trajano Camargo de Limeira e, em 09 de setembro de 1973, passou para as novas instalações no atual campus I da UNICAMP em Limeira. 
     </p>
     <hr>
     <p id="rodape">Colégio Técnico de Limeira – COTIL</p>
+
+    2<span id="pot">3</span>
 </body>
 </html>
