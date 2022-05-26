@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+            background-image: url("https://www.cotil.unicamp.br/wp-content/uploads/2021/04/0118_cotil_capa_Easy-Resizecom-1024x682.jpg");
+        }
+        #menu {
+            background-color: #299cb1;
+            padding: 5px 10px 5px 10px;
+            margin-bottom: 15px;
+        }
+        .formataDiv {
+            background-color: rgba(242, 171, 12, 0.7);
+            width: 250px;
+            height: 180px;
+            /* visibility: hidden; */
+            display: block; /*none */
+            /* opacity: 0.5; */
+
+            /* Margem interna */
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+            padding: 10px 20px 10px 20px; /* ALTERNATIVA. Sequência: top, right, bottom, left */
+
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <a href="https://www.cotil.unicamp.br">Cotil</a>
+        <a href="https://www.unicamp.br">Unicamp</a>
+    </div>
+    <div class="formataDiv">
+        Cotil - Unicamp
+        <br>
+        Iniciou seu funcionamento nas instalações provisórias do Ginásio Estadual Industrial Trajano Camargo de Limeira e, em 09 de setembro de 1973, passou para as novas instalações no atual campus I da UNICAMP em Limeira. 
+    </div>
+    
+</body>
+</html>
