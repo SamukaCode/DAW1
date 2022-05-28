@@ -49,20 +49,20 @@
                     <div class="fcontainer">
                         <div class="fitem form1">
                             <label for="name">Nome Completo:</label><br>
-                            <input type="text" name="name" id="name" maxlength="80" minlength="5" placeholder="Ex: Roberto Carlos Braga" spellcheck required accesskey="1">
+                            <input tabindex="" type="text" name="name" id="name" maxlength="80" minlength="5" placeholder="Ex: Roberto Carlos Braga" spellcheck required tabindex="1">
                                 <br>
 
                             <label for="email">E-mail:</label><br>
-                            <input type="email" name="email" id="email" maxlength="100" minlength="2" placeholder="Ex: roberto@email.com" required accesskey="2">
+                            <input type="email" name="email" id="email" maxlength="100" minlength="2" placeholder="Ex: roberto@email.com" required tabindex="2">
                                 <br>
                         </div>
                         <div class="fitem form2">
                             <label for="nascimento">Data de nascimento</label><br>
-                            <input type="date" name="nascimento" id="nascimento" required accesskey="3">
+                            <input type="date" name="nascimento" id="nascimento" required tabindex="3">
                                 <br>
 
                             <label for="cpf">CPF:</label><br>
-                            <input oninput="mascara(this)" type="text" name="cpf" id="cpf" minlength="14" placeholder="Ex: 123.456.789-00" required accesskey="4">
+                            <input oninput="mascara(this)" type="text" name="cpf" id="cpf" minlength="14" placeholder="Ex: 123.456.789-00" required tabindex="4">
                                 <br>
                         </div>
                     </div>
@@ -74,29 +74,29 @@
                     <div class="container">
                         <div class="fitem form1">
                             <label for="end">Endereço:</label><br>
-                            <input type="text" name="end" id="end" maxlength="150" placeholder="Ex: Rua das Macaxeiras" required accesskey="5">
+                            <input type="text" name="end" id="end" maxlength="150" placeholder="Ex: Rua das Macaxeiras" required tabindex="5">
                             <br>
 
                             <label for="baba">Bairro:</label><br>
-                            <input type="text" name="baba" id="baba" maxlength="50" placeholder="Ex: Jardim Roseiras" required accesskey="6">
+                            <input type="text" name="baba" id="baba" maxlength="50" placeholder="Ex: Jardim Roseiras" required tabindex="6">
                             <br>
 
                             <label for="comp">Complemento:</label><br>
-                            <input type="text" name="comp" id="comp" maxlength="100" placeholder="Ex: Condomínio Alvorada ou Perto do Parque" accesskey="7">
+                            <input type="text" name="comp" id="comp" maxlength="100" placeholder="Ex: Condomínio Alvorada ou Perto do Parque" tabindex="7">
 
                         </div>
                         <div class="fitem form2">
 
                             <label for="cep">CEP:</label><br>
-                            <input oninput="mascaracep(this)" type="text" name="cep" id="cep" minlength="10" placeholder="Ex: 12.345-600" required accesskey="8">
+                            <input oninput="mascaracep(this)" type="text" name="cep" id="cep" minlength="10" placeholder="Ex: 12.345-600" required tabindex="8">
                             <br>
 
                             <label for="num">Número:</label><br>
-                            <input type="number" name="num" id="num" min="1" required placeholder="Ex: 123" accesskey="9">
+                            <input type="number" name="num" id="num" min="1" required placeholder="Ex: 123" tabindex="9">
                             <br>
 
                             <label for="opEnt">Opção de Entrega</label><br>
-                            <select name="opEnt" id="opEnt" required>
+                            <select name="opEnt" id="opEnt" required tabindex="10">
                                 <optgroup label="Entrega Normal">
                                     <option value="Jadlog">Jadlog (10 dias úteis)</option>
                                     <option value="Sedex">Sedex (7 dias úteis)</option>
@@ -123,7 +123,7 @@
                     <div class="fcontainer">
                         <div class="fitem form1">
                             <label for="produto">Produto Escolhido:</label><br>
-                            <select onchange="muda()" name="produto" id="produto" required>
+                            <select onchange="muda()" name="produto" id="produto" required tabindex="11">
                                 <option value="R$ 0,00">Selecione uma opção.</option>
                                 <option value="R$ 199,90">Pacote Blinder Premium Deluxe: R$ 199,90</option>
                                 <option value="R$ 149,90">Pacote Blinder Deluxe: R$ 149,90</option>
@@ -132,9 +132,9 @@
 
                             <br>
                             <label for="credit">Número do Cartão de Crédito:</label><br>
-                            <input oninput="mascarac(this)" type="text" name="credit" id="credit" minlength="16" required>
+                            <input oninput="mascarac(this)" type="text" name="credit" id="credit" minlength="16" required tabindex="12">
                             <label for="parc">Parcelamento:</small></label><br>
-                                <select>
+                                <select tabindex="13">
                                     <option value="1" selected>1x - sem juros.</option>
                                     <option value="2">2x - sem juros.</option>
                                     <option value="3">3x - com juros.</option>
@@ -142,25 +142,25 @@
                         </div>
                         <div class="fitem form2">
                             <label for="bdr">Bandeira do Cartão:</label>
-                            <select>
+                            <select name="bdr" id="bdr" tabindex="14">
                                 <option value="master">MasterCard</option>
                                 <option value="visa">Visa</option>
                             </select>
                             <label for="cvv">Código de Segurança do Cartão:</label><br>
-                            <input type="password" name="credit" id="credit" minlength="3" maxlength="3" required><br>
+                            <input type="password" name="credit" id="credit" minlength="3" maxlength="3" required tabindex="15"><br>
                             <span style="font-size: 25px">Total:</span>
-                            <input type="text" name="total" id="total" value="R$ 0,00" readonly>
+                            <input type="text" name="total" id="total" value="R$ 0,00" readonly tabindex="16">
                         </div>
                     </div>
                     <hr>
                     Finalizar:
                     <div class="fcontainer">
                         <div class="button1">
-                            <input type="submit" name="btnEnviar" value="Efetuar Pagamento" style="background-color: rgb(172, 172, 172); font-weight: bold;">
+                            <input type="submit" name="btnEnviar" value="Efetuar Pagamento" style="background-color: rgb(172, 172, 172); font-weight: bold;" tabindex="17">
                         </div>
                         <div class="divbutton"></div>
                         <div class="button2">
-                            <input type="reset" value="Limpar todos os Campos" style="background-color: rgb(172, 172, 172); font-weight: bold;">
+                            <input type="reset" value="Limpar todos os Campos" style="background-color: rgb(172, 172, 172); font-weight: bold;" tabindex="18">
                         </div>
                     </div>
                 </fieldset>
@@ -168,5 +168,12 @@
             </fieldset>
         </div>
     </div>
+    <footer>
+        <hr>
+            Todos os Direitos Reservados: Davie e Samuel © 
+        <br><br>
+        <img src="images/cotil.png">
+        <br><br>
+    </footer>
 </body>
 </html>
