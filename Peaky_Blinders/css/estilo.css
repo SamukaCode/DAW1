@@ -69,13 +69,3 @@
              color: #525252;
              font-size: 16px
          }
-
-         #falta {
-            background-color: rgba(0%, 0%, 0%, 0);
-             color: white;
-             font-weight: bold;
-             border-color: rgba(0%, 0%, 0%, 0);
-             font-size: 25px;
-             padding: 8px 0px;
-             margin: 0px;
-          }
