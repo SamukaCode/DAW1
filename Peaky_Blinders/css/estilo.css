@@ -1,71 +1,90 @@
-/* ! Aqui jaz toda a linha de código destinada ao CSS do estilo geral */
+    /* ! Aqui jaz toda a linha de código destinada ao CSS do estilo geral */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=My+Soul&family=Oswald&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=My+Soul&family=Oswald&display=swap');
 
-        h1 {
-            font-family: 'Bebas Neue', cursive;
-        }
+            h1 {
+                font-family: 'Bebas Neue', cursive;
+            }
 
-        body {
-            font-family: 'Oswald', sans-serif;
-            color:  #FFFFFF;
-            font-size: 20px;
-            background: linear-gradient(0deg, #1a1a1a 0%, #2e2e2e 50%, #4b4b4b 100%);
-            margin: 0;
-            padding: 0;
-        }
+            body {
+                font-family: 'Oswald', sans-serif;
+                color:  #FFFFFF;
+                font-size: 20px;
+                background: linear-gradient(0deg, #1a1a1a 0%, #2e2e2e 50%, #4b4b4b 100%);
+                margin: 0px;
+                padding: 0px;
+            }
 
-        p {
-            padding: 5px 10px;
-            text-align: justify;
-        }
+            p {
+                padding: 5px 10px;
+                text-align: justify;
+            }
 
-        .justalign {
-            text-align: center;
-        }
+            .justalign {
+                text-align: center;
+            }
 
-        .container { /* * Flex Box */
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
+            .container { /* * Flex Box */
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+            }
 
-        .item { /* * Flex Box */
-            padding: 10px;
-            margin: 5px;
-          } 
-         
-         .index1 { /* * Flex Box */
-            width: 70%;
-         }
-         
-         .index2 { /* * Flex Box */
-            width: 30%;
-         }
+            .item { /* * Flex Box */
+                padding: 10px;
+                margin: 5px 30px 5px 30px;
+            } 
+            
+            .index1 { /* * Flex Box */
+                width: 70%;
+            }
+            
+            .index2 { /* * Flex Box */
+                width: 30%;
+            }
 
-         .fotoThommy{
-             display: flex;
-             align-items: center;
-         }
+            a {
+                color: #868686;
+            }
 
-         a {
-             color: #868686;
-         }
+            .li {
+                color: #bbbbbb;
+            }
 
-         .li {
-             color: #bbbbbb;
-         }
+            tr {
+                text-align: center
+            }
+            
+            footer {
+                background-color: rgb(23,23,23);
+                text-align: center;
+                align-items: center;
+                color: #525252;
+                font-size: 16px
+            }
 
-         tr {
-             text-align: center
-         }
-         
-         footer {
-             background-color: rgb(23,23,23);
-             text-align: center;
-             align-items: center;
-             color: #525252;
-             font-size: 16px
-         }
+            #imgT {
+                text-align: center;
+                align-items: center;
+            }
+
+            /* Voltar ao Topo */
+
+            .button {
+                background-color: transparent;
+                color: rgb(251, 251, 251);
+                border: 2px solid #555555;
+                font-size: 25px;
+                font-family: 'Oswald', cursive;
+                margin-left: 46%;
+                padding: 5px 10px 5px 10px;
+            }
+            
+            .button:hover {
+                background-color: #555555;
+                color: white;
+                transition: 1s;
+                border: 2px solid white;
+            }
