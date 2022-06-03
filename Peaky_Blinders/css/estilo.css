@@ -87,4 +87,5 @@
                 color: white;
                 transition: 1s;
                 border: 2px solid white;
+                cursor: pointer;
             }
