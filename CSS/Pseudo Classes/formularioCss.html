@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+
+<html>
+    
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Usuário</title>
+    <style>
+        .box {
+            border: 1px solid gray;
+            border-radius: 5px;
+            max-width: 500px;
+            box-shadow: 5px 5px 5px gray;
+            padding: 10px 30px 10px 30px;
+        }
+
+        body {
+            font-family: arial;
+        }
+
+        label {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .box-campos {
+            margin-bottom: 20px;
+        }
+
+
+
+    </style>
+</head>
+    
+<body>
+    <div class="box">
+	<h1>Cadastro de Usuário</h1>
+    
+	<form>
+        
+        <div class="box-campos">
+	    	<label for="nome">Nome</label>
+	    	<input id="nome" name="nome" type="text" placeholder="Digite um nome" required minlength="5">
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="email">E-Mail</label>
+	    	<input id="email" type="email" required placeholder="nome@email.com">
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="senha">Senha</label>
+	    	<input id="senha" type="password" minlength="6" required>
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label>Escolha suas frutas favoritas</label>
+	    	<input id="laranja" type="checkbox" value="laranja"><label for="laranja">Laranja</label>
+	    	<input id="maca" type="checkbox" value="maca"><label for="maca">Maçã</label>
+	    	<input id="banana" type="checkbox" value="banana"><label for="banana">Banana</label>
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label>Sexo</label>
+	    	<input name="sexo" id="f" type="radio" value="f"><label for="f">F</label>
+	    	<input name="sexo" id="m" type="radio" value="m"><label for="m">M</label>
+	    	<br>
+        </div>
+        
+        <div class="box-campos">
+	    	<label for="cor">Escolha uma cor</label>
+	    	<input id="cor" type="color">
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="aniversario">Data de Aniversário</label>
+	    	<input id="aniversario" type="date" required>
+	    	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="idade">Idade</label>
+	    	<input id="idade" type="number" min="10">
+	     	<br>
+        </div>
+
+        <div class="box-campos">
+	    	<label for="nota">Nota</label>
+	    	<input id="nota" type="range" min="0" max="10">
+	    	<br>
+        </div>
+        
+    <div class="box-campos">
+		<label for="pagina">Página</label>
+		<input id="pagina" type="url" placeholder="https://suapagina.com">
+		<br>
+    </div>
+        
+		<input type="submit" value="Cadastrar">
+	</form></div>
+    
+</body>
+</html>
+</body>
+</html>
