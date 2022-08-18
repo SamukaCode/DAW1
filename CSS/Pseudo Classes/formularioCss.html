@@ -28,7 +28,7 @@
         }
 
         label {
-            color: blue;
+            color: green;
             font-weight: bold;
         }
 
@@ -36,9 +36,59 @@
             margin-bottom: 20px;
         }
 
+        input:hover {
+            background-color: gray;
+            border-color: green;
+        }
+        
+        input:focus {
+            background-color: white;
+            border-color: green;
+            color: green;
+        }
 
+        input::placeholder {
+            color: green;
+            font-weight: bold;
+        }
 
-    </style>
+        .formataInput {
+            width: 100%;
+            height: 30px;
+            margin-top: 5px;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+        
+        .button-33 {
+            background-color: #c2fbd7;
+            border-radius: 100px;
+            box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+            color: green;
+            cursor: pointer;
+            display: inline-block;
+            font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+            padding: 7px 20px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 250ms;
+            border: 0;
+            font-size: 16px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button {
+            text-align: right;
+        }
+
+        .button-33:hover {
+            box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+            transform: scale(1.05) rotate(-1deg);
+        }
+
+        </style>
 </head>
     
 <body>
@@ -49,19 +99,19 @@
         
         <div class="box-campos">
 	    	<label for="nome">Nome</label>
-	    	<input id="nome" name="nome" type="text" placeholder="Digite um nome" required minlength="5">
+	    	<input class="formataInput" id="nome" name="nome" type="text" placeholder="Digite um nome" required minlength="5">
 	    	<br>
         </div>
 
         <div class="box-campos">
 	    	<label for="email">E-Mail</label>
-	    	<input id="email" type="email" required placeholder="nome@email.com">
+	    	<input class="formataInput" id="email" type="email" required placeholder="nome@email.com">
 	    	<br>
         </div>
 
         <div class="box-campos">
 	    	<label for="senha">Senha</label>
-	    	<input id="senha" type="password" minlength="6" required>
+	    	<input class="formataInput" id="senha" type="password" minlength="6" required>
 	    	<br>
         </div>
 
@@ -82,19 +132,19 @@
         
         <div class="box-campos">
 	    	<label for="cor">Escolha uma cor</label>
-	    	<input id="cor" type="color">
+	    	<input class="formataInput" id="cor" type="color">
 	    	<br>
         </div>
 
         <div class="box-campos">
 	    	<label for="aniversario">Data de Aniversário</label>
-	    	<input id="aniversario" type="date" required>
+	    	<input class="formataInput" id="aniversario" type="date" required>
 	    	<br>
         </div>
 
         <div class="box-campos">
 	    	<label for="idade">Idade</label>
-	    	<input id="idade" type="number" min="10">
+	    	<input class="formataInput" id="idade" type="number" min="10">
 	     	<br>
         </div>
 
@@ -109,8 +159,8 @@
 		<input id="pagina" type="url" placeholder="https://suapagina.com">
 		<br>
     </div>
-        
-		<input type="submit" value="Cadastrar">
+        <div class="button">
+		<button class="button-33" type="submit">Cadastrar</button></div>
 	</form></div>
     
 </body>
