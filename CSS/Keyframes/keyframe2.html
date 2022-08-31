@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        div{
+            width: 150px;
+            height: 100px;
+            position: relative;
+            animation: animacao1 10s;
+        }
+
+        @keyframes animacao1{
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                left: 250px;
+                top: 0px;
+            }
+            50% {
+                left: 250px;
+                top: 250px;
+            }
+            75% {
+                left: 0px;
+                top: 250px;
+            }
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div><img src="th.jpg"></div>
+</body>
+</html>
