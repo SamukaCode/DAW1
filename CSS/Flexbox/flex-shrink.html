@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          max-width: 600px;
+          height: 400px; 
+          margin: 0 auto;
+          border: 1px solid #000;
+          display: flex; 
+          flex-direction: row; 
+          flex-wrap: wrap;
+          /*justify-content: center;*/
+          align-content: space-between; 
+          margin-bottom: 20px;
+        }
+  
+        .item {
+          margin: 5px;
+          padding: 5px;
+          background: #447;
+          text-align: center;
+          font-size: 1em;
+          color: #fff;  
+          height: 200px;
+        }
+  
+        .tam1 {
+          flex-grow: 1;
+        }
+
+        .naoreduzir {
+            flex-shrink: 0; /* Elemento não irá reduzir para caber no container */
+        }
+
+        .reduzir {
+            flex-shrink: 1; /* Elemento irá reduzir para caber no container */
+        }
+
+        .reduzirmais {
+            flex-shrink: 2; /* Quanto maior o vl, maior a capacidade de redução */
+        }
+            
+    </style>
+    </head>
+  
+    <body>
+        <div class="container">
+          <div class="item naoreduzir">Item 1</div>
+          <div class="item reduzir">Item 2</div>
+          <div class="item reduzirmais">Item 3</div>   
+          <div class="item reduzir">Item 4</div>
+        </div>
+    
+</body>
+</html>

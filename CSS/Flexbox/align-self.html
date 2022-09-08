@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Align Self</title>
+
+    <style>
+      body {
+        font-family: arial;
+        color: #000;
+      }
+
+      .container {
+        max-width: 600px;
+        height: 400px; 
+        margin: 0 auto;
+        border: 1px solid #000;
+        display: flex; 
+        flex-direction: row; 
+        /*flex-wrap: wrap; retirar para não ter quebra de linha qd nao cabe no container */
+        justify-content: center;
+        /*align-content: space-between;*/
+        align-items: center;
+      }
+
+      .item {
+        margin: 5px;
+        padding: 5px;
+        background: #447;
+        text-align: center;
+        font-size: 1em;
+        color: #fff;  
+        /* width: 200px; */
+      }
+
+      .inicio {
+        align-self: flex-start;
+      }
+
+      .meio {
+        align-self: center;
+      }      
+
+      .base {
+        align-self: flex-end;
+      }      
+    </style>
+
+  </head>
+
+  <body>
+
+      <div class="container">
+        <div class="item inicio">Cotil - Unicamp</div>
+        <div class="item meio">Cotil - Unicamp</div>
+        <div class="item base">Cotil - Unicamp</div>   
+      </div>     
+
+  </body>
+  
+</html>
