@@ -7,3 +7,11 @@
     border-radius: 5px;
     padding: 20px;
 }
+
+.card img {
+    height: 195px;
+}
+
+.card {
+    margin-bottom: 20px;
+}

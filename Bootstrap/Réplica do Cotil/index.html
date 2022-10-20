@@ -16,7 +16,7 @@
     <!-- Início navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="">Logo</a>
+            <a class="navbar-brand" href=""><img src="img/unicamp.GIF" width="70px" alt="Logo da Unicamp"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Digite aqui..." aria-label="Search">
-                    <button class="btn btn-danger" type="submit">Pesquisar</button>
+                    <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
         </div>
@@ -64,11 +64,12 @@
 
     <div class="container mt-3">
         <div class="row">
-            <div class="col-md-2 col-sm-12"></div>
+            <div class="col-md-2 col-sm-12 pt-2"><i class="bi bi-house-door-fill text-danger"></i></div>
 
             <div class="col-md-3 col-sm-12 pt-2"><i class="bi bi-telephone-fill text-danger"></i> (19) 2113-3300</div>
 
-            <div class="col-md-3 col-sm-12 pt-2"><i class="bi bi-envelope-fill text-danger"></i> cotil@cotil.unicamp.br</div>
+            <div class="col-md-3 col-sm-12 pt-2"><i class="bi bi-envelope-fill text-danger"></i> cotil@cotil.unicamp.br
+            </div>
 
             <div class="col-md-4 col-sm-12">
                 <button class="btn btn-light border-danger"><i class="bi bi-facebook text-danger"></i></button>
@@ -84,12 +85,93 @@
     <!-- fim container inicial -->
 
     <!-- container cursos -->
-    <div class="container">
-        <h4 class="display-5 myContainer">Nossos Cursos</h4>
+    <div class="container myContainer">
+
+        <h4 class="display-5"><i class="bi bi-book"></i> Nossos Cursos</h4>
+
+        <!-- 1º linha do grid system -->
+        <div class="row">
+            <!-- 1º div da 1º row -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="img/edificacoes.jpg" class="card-img-top" alt="Imagem do curso de Edificações">
+                    <div class="card-body">
+                        <h5 class="card-title">Edificações</h5>
+                        <p class="card-text">Para quem tem interesse na área de construção civil e arquitetura geral.</p>
+                        <a href="edificacoes.html" class="btn btn-danger">Conheça</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2º div da 1º row -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="img/enfermagem.png" class="card-img-top" alt="Imagem do curso de Enfermagem">
+                    <div class="card-body">
+                        <h5 class="card-title">Enfermagem</h5>
+                        <p class="card-text">Para quem tem interesse na área da saúde das pessoas e salvar vidas.</p>
+                        <a href="enfermagem.html" class="btn btn-danger">Conheça</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3º div da 1º row -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="img/geodesia.jpg" class="card-img-top" alt="Imagem do curso de Geodésia e Cartografia">
+                    <div class="card-body">
+                        <h5 class="card-title">Geodésia e Cartografia</h5>
+                        <p class="card-text">Para quem tem interesse na área de mapas, satélites e agromensura.</p>
+                        <a href="geodesia.html" class="btn btn-danger">Conheça</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2º linha do grid system -->
+        <div class="row">
+            <!-- 1º div da 2º row -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="img/qualidade.png" class="card-img-top" alt="Imagem do curso de Qualidade">
+                    <div class="card-body">
+                        <h5 class="card-title">Qualidade</h5>
+                        <p class="card-text">Para quem tem interesse na área de implementação e manutenção dos sistemas de gestão da qualidade.</p>
+                        <a href="qualidade.html" class="btn btn-danger">Conheça</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2º div da 2º row -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="img/mecanica.jpg" class="card-img-top" alt="Imagem do curso de Mecânica">
+                    <div class="card-body">
+                        <h5 class="card-title">Mecânica</h5>
+                        <p class="card-text">Para quem tem interesse na área da mecânica industrial, maquinário e afins.</p>
+                        <a href="mecanica.html" class="btn btn-danger">Conheça</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3º div da 2º row -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="img/informatica.png" class="card-img-top" alt="Imagem do curso de Desenvolvimento de Sistemas">
+                    <div class="card-body">
+                        <h5 class="card-title">Geodésia e Cartografia</h5>
+                        <p class="card-text">Para quem tem interesse na área de programação e desenvolvimento de softwares.</p>
+                        <a href="ds.html" class="btn btn-danger">Conheça</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fim do grid system -->
     </div>
+    
     <!-- fim container cursos -->
 
-    
+
 
 
 
