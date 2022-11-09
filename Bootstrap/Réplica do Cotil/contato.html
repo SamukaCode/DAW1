@@ -28,7 +28,7 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="nossaescola.html">Nossa Escola</a>
+                        <a class="nav-link" href="nossaescola.html">Nossa Escola</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -36,8 +36,8 @@
                             Cursos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="ds.html"><i class="bi bi-laptop"></i>
-                                    Desenvolvimento de Sistemas</a></li>
+                            <li><a class="dropdown-item" href="ds.html"><i class="bi bi-laptop"></i> Desenvolvimento de
+                                    Sistemas</a></li>
                             <li><a class="dropdown-item" href="edif.html">Edificações</a></li>
                             <li><a class="dropdown-item" href="enf.html">Enfermagem</a></li>
                             <li><a class="dropdown-item" href="mec.html">Mecânica</a></li>
@@ -51,7 +51,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
+                        <a class="nav-link active" href="contato.html">Contato</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -66,50 +66,76 @@
     <!-- container cursos -->
     <div class="container myContainer">
 
-        <h4 class="display-4"><i class="bi bi-laptop"></i> Nossa Escola</h4>
+        <h4 class="display-4"><i class="bi bi-chat-dots"></i> Contato</h4>
 
-        <p class="lead">Nossa escola oferece uma ótima estrutura para todos os cursos.</p>
+        <p class="lead">Preencha o formulário abaixo:</p>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/lab-ds.jpg" class="d-block w-100" alt="Laboratório de Desenvolvimento de Sistemas">
+        <form>
+            <div class="row">
+                <div class="col-md-6 col-sm-12  mt-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" name="nome" class="form-control">
                 </div>
-                <div class="carousel-item">
-                    <img src="img/auditorio.jpg" class="d-block w-100" alt="Auditório Aloísio Ferreira Vieira">
+
+                <div class="col-md-4 col-sm-12  mt-3">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="text" name="email" class="form-control">
                 </div>
-                <div class="carousel-item">
-                    <img src="img/admin.jpg" class="d-block w-100" alt="Prédio Administrativo">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/portaria.jpg" class="d-block w-100" alt="Portaria Principal">
+
+                <div class="col-md-2 col-sm-12  mt-3">
+                    <label for="telefone" class="form-label">Telefone:</label>
+                    <input type="text" name="telefone" class="form-control">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
 
+            <div class="row">
+                <div class="col-md-6 col-sm-12  mt-3">
+                    <label for="cidade" class="form-label">Cidade:</label>
+                    <input type="text" name="cidade" class="form-control">
+                </div>
+
+                <div class="col-md-2 col-sm-12  mt-3">
+                    <label for="estado" class="form-label">Estado:</label>
+                    <select name="estado" id="estado" class="form-select">
+                        <option value="empty"></option>
+                        <option value="sp">SP</option>
+                        <option value="rj">RJ</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 col-sm-12  mt-3">
+                    <label for="cep" class="form-label">CEP:</label>
+                    <input type="text" name="cep" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 mt-3">
+                    <label for="msg" class="form-label">Mensagem:</label>
+                    <textarea rows="5" name="msg" class="form-control"></textarea>
+                </div>
+            </div>
+            <br>
+
+            <button class="btn btn-danger"><i class="bi bi-send"> Enviar</i></button>
+            <button class="btn btn-danger"><i class="bi bi-x-circle"> Limpar</i></button>
+
+
+
+        </form>
     </div>
+    <!-- fim form -->
 
-    <!-- fim container cursos -->
+    <!-- container mapa -->
+
+    <div class="container myContainer mt-3">
+
+        <h4 class="display-4"><i class="bi bi-geo-alt"></i> Localização</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1549.1174852079494!2d-47.42530885846064!3d-22.562526194911474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8806c2c324933%3A0xe2108428886c8646!2sCol%C3%A9gio%20T%C3%A9cnico%20de%20Limeira%20-%20Unicamp!5e0!3m2!1spt-BR!2sbr!4v1668012954311!5m2!1spt-BR!2sbr"
+            width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
 
 
