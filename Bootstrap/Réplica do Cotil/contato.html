@@ -70,11 +70,14 @@
 
         <p class="lead">Preencha o formulário abaixo:</p>
 
-        <form>
+        <form class="needs-validation" novalidate>
             <div class="row">
                 <div class="col-md-6 col-sm-12  mt-3">
                     <label for="nome" class="form-label">Nome:</label>
-                    <input type="text" name="nome" class="form-control">
+                    <input type="text" name="nome" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Campo obrigatório!
+                    </div>
                 </div>
 
                 <div class="col-md-4 col-sm-12  mt-3">
@@ -117,8 +120,8 @@
             </div>
             <br>
 
-            <button class="btn btn-danger"><i class="bi bi-send"> Enviar</i></button>
-            <button class="btn btn-danger"><i class="bi bi-x-circle"> Limpar</i></button>
+            <button type="submit" class="btn btn-danger"><i class="bi bi-send"> Enviar</i></button>
+            <button type="reset" class="btn btn-danger"><i class="bi bi-x-circle"> Limpar</i></button>
 
 
 
@@ -136,12 +139,32 @@
             width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+ 
+    <!-- fim mapa -->
 
 
 
+    <script type="text/javascript">
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
 
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
 
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
 
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
