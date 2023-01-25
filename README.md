@@ -1,4 +1,4 @@
 # DAW1
-Repositório da matéria de DAW
+Repositório da disciplina de Desenvolvimento de Aplicações Web.
 
 
